@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&display=swap');
+
+
+/* Reset Part */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondaty-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px
+}
+
+body {
+    font-family: 'sans-serif';
+    color: var(--primary-text-color);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hover-links {
+    color: var(--primary-text-color);
+    transition: 0.125s ease-out;
+}
+
+.hover-links:hover {
+    color: var(--accent-color);
+
+}
+
+.header-right img {
+    width: 500px;
+}
+
+
+/* Utility classes */
+small-bold-text {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #183b56;
+}
+
+.container {
+    max-width: 1186px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+ul li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.top-banner {
+    background-color: blueviolet;
+    background-image: url(All-Img/r1.png);
+    background-size: 900px;
+}
+
+
+.banner-text {
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+
+}
+
+.main-nav {
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.company-logo img {
+    width: 300px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    /* Align items to the end of the container */
+}
+
+.nav-links li {
+    margin: 0;
+    /* Remove default margin for list items */
+    padding: 40px 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    /* Use the primary text color variable */
+    font-weight: 700;
+    margin: -10px;
+    font-size: 1rem;
+}
+
+.secondary-button {
+    border: 0.5px solid var(--secondaty-text-color);
+
+    border-radius: 8px;
+    font-weight: 700;
+    color: var(--primary-text-color);
+    padding: 10px 10px;
+    box-shadow: 0px 0px 5px var(--accent-color);
+    transition: 0.125s ease-out;
+}
+
+.primary-button {
+    background-color: var(--accent-color);
+    border-radius: 8px;
+    font-weight: 700;
+    color: white !important;
+    padding: 10px 10px;
+    box-shadow: 0px 0px 5px var(--accent-color);
+    transition: 0.125s ease-out;
+}
+
+.primary-button:hover {
+    color: var(--accent-color-dark);
+}
+
+.logos img{
+    width: 200px;
+    flex-wrap: wrap;
+}
+
+/* Header section */
+
+header {
+    /* This padding is 50 from top left and right by using gobal variable and 0 px from bottom   */
+   
+    padding: 50px var(--padding-inline-section) 0; 
+}
+.header-left h1{
+    margin-top: 30px;
+}
+
+.header-left p{
+    margin-top: 30px;
+}
+
+
+.header-section{
+    justify-content: center;
+    gap: 40px;
+}
+.get-start-btn{
+    margin-top: 20px;
+}
+.header-left{
+    max-width: 40vw;
+}
+
+/* Company section */
+.companies-header{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    color: var(--primary-text-color);
+}
+
+
+.logo{
+    padding: 12px var(--padding-inline-section) 0px;
+    
+}
+.logo:hover{
+
+}
+
+
+/* feature- section */
+.features-section{
+    padding: 80px var(--padding-inline-section) 0;
+    background-image: url(All-Img/12426.jpg ) ;
+    /* background-image: url(All-Img/claimAft.png); */
+    background-repeat: no-repeat;
+    /* background-position: center; */
+}
+
+.features-section{
+    text-align: center;
+}
+
+.feature-header{
+    margin-bottom: 30px;
+}
+
+.feature-heading-text{
+    margin-bottom: 30px;
+}
+
+.features-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.features-card{
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    /* margin-top: 20px; */
+    text-align: center;
+}
+
+.big-features-section{
+    padding: 30px var(--padding-inline-section) 0;
+}
+.img-feature img{
+    width: 80%;
+}
+
+.feature-desc{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    
+}
+
+
+/* Example section header  */
+
+.example-header {
+    flex-direction: column;
+    text-align: center;
+}
+
+.example-heading-text{
+    margin-bottom: 20px;
+}
+
+.example-area{
+    justify-content: space-between;
+    margin-block: 40px;
+}
+
+
+.example-card{
+
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background-color: black;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8) ) ,url(All-Img/pexels-james-wheeler-1519088.jpg);
+    background-size: 470px;
+    transition: 0.2s ease-out;
+    padding: 20px 30px;
+}
+.card-text{
+    color: white;
+    position: absolute;
+    bottom: 7px;
+    top: 209px;
+    left: 23px;
+}
+
+.example-card:hover{
+    box-shadow: 0px 0px 50px var(--accent-color-dark);
+    
+}
+
+.example-card:nth-child(2){
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8) ) ,url(All-Img/checklist-2589418_1280.jpg);
+    background-size: 454px;
+}
+
+.example-card:nth-child(3){
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8) ) ,url(All-Img/people-1979261_1280.jpg);
+    background-size: 454px;
+}
+
+.example-card:nth-child(4){
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8) ) ,url(All-Img/teamwork-3213924_1280.jpg);
+    background-size: 454px; 
+}
+.cta-section{
+    background-color: #183b54;
+    padding: 120px var(--padding-inline-section) 80px;
+}
+.cta-section-container{
+    flex-direction: column;
+    gap: 40px;
+    
+    color: white;
+}
+
+/* Footer section */
+
+.link-column{
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: aqua; */
+
+}
+
+.footer-container{
+
+    align-content: flex-start;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+footer{
+    padding-block: 80px;
+    background-color: aqua;
+}
+
+
+
+/* Sub Footer */
+
+.subfooter{
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+}
+
+.subfooter-container{
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+
+
+
